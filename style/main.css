@@ -1,0 +1,121 @@
+:root{
+    --vermelho: red;
+    --preto: black;
+    --navMenu: #AAA;
+    --navSelected: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kanit-v11-latin-regular.eot');
+  }
+
+/*General Content*/
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+   display: flex;
+   flex-direction: row;  /*já vem por padrão*/
+   text-align: center;
+   justify-content: space-between;
+}
+
+header .logo{
+    margin-right: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+}
+
+header nav{
+    margin-top: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--navMenu);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--navSelected);
+}
+
+/*About the Principal Movie*/
+
+.principal-movie{
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50) 100% ), url('../img/principal_movie.jpeg');
+    
+    height: 500px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.principal-movie .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Kanit';
+    font-size: 18px;
+}
+
+.title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Kanit';
+    padding-bottom: 15px;
+}
+
+.button{
+    background-color: rgba(0,0,0,.75);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.principal-movie .container{
+    width: 60%;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
